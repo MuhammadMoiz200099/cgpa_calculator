@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CG Calc - CGPA Calculator</title>
+    <link rel="stylesheet" href="./assets/animate.css">
+    <link rel="stylesheet" href="./assets/bootstrap.css">
+    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.css">
+    <!-- loader styles -->
+    <link rel="stylesheet" href="./styles/loader.css">
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="loader-container" id="loader">
+        <div class="book">
+            <div class="inner">
+                <div class="left"></div>
+                <div class="middle"></div>
+                <div class="right"></div>
+            </div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="preview" class="mb-5">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <div class="navbar-brand">
+                CG Calc
+            </div>
+            <ul class="navbar-nav nav-gravitar">
+                <li class="nav-item active" id="nav1" onclick="changeActiveNav1()">
+                    <a class="nav-link" href="index.html">GPA Calculator</a>
+                </li>
+            </ul>
+            <div id="socio" class="social">
+                <a href="">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-code"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+
+            </div>
+        </nav>
+
+        <section class="section">
+            <div class="container-fluid">
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3> Calculate Your GPA</h3>
+                        <br>
+                        <table class="table">
+                            <thead>
+                                <th>Course Credit hr.</th>
+                                <th>Course Grade</th>
+                            </thead>
+                            <tbody id="gpa-table"></tbody>
+                        </table>
+                        <button class="btn btn-primary" onclick="addColumn()">Add Column</button>
+                        <button class="btn btn-danger" onclick="removeColumn()">Remove Column</button>
+                        <button class="btn btn-warning" onclick="reset()">Reset</button>
+                        <button class="btn btn-success" onclick="generateResult()">Generate Result</button>
+                    </div>
+                    <div class="col-md-6">
+                        <br><br>
+                        <h5 class="ml-4">YOUR RESULT:</h5>
+                        <div id="final-result" class="ml-4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="./assets/jquery.js"></script>
+    <script src="./assets/bootstrap.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

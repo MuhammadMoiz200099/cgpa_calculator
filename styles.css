@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* ------------------------------
+    documnet preview 
+-------------------------------- */
+
+#preview {
+    display: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ------------------------------
+    navbar 
+-------------------------------- */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    font-weight: bolder;
+    animation: jello 1.5s infinite;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-gravitar {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+nav .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 13px;
+}
+
+nav .social a {
+    color: white;
+}
+
+.color-black a i {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 991px) {
+    .nav-gravitar {
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .nav .social {
+        display: none;
+    }
+}
+
+
+/* ------------------------------
+    section 
+-------------------------------- */
+
+.section {
+    margin-top: 60px;
+}
+
+select {
+    padding: 6px 30px;
+}
+
+#final-result {
+    font-size: 300px;
+}
